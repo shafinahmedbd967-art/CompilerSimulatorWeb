@@ -114,22 +114,10 @@ x = a ** 3   ← triggers error detection
 
 ---
 
-## 👥 Team
-
-| Name | Student ID | Role |
-|---|---|---|
-| Shafin Ahmed | 232-15-184 | Project Lead / Lead Developer |
-| MD Foysal Bhuiyan | 232-15-897 | Compiler Logic Developer |
-| Safayet Abir | 232-15-225 | Frontend Developer |
-| Abu Dazana | 232-15-810 | Documentation & Semantic Module |
-| Bijoy Krishna Sarker | 232-15-219 | Testing & QA |
-
----
-
 ## 📚 Course Info
 
 **Course:** CSE314 – Compiler Design Lab  
-**Section:** 65-H2, Group 05  
+**Section:** 65-H2 
 **Supervisor:** Rabeya Khatun, Lecturer, CSE Dept.  
 **Institution:** Daffodil International University, Dhaka, Bangladesh  
 **Submitted:** December 14, 2025
