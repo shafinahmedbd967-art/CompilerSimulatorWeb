@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Compiler Simulator — Shafin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Compiler Simulator</h1>
+      <p class="sub">Explore 6 Phases of Compilation — Interactive & Modern</p>
+    </header>
+
+    <nav class="tabs" id="tabNav">
+      <button class="tab-btn active" data-tab="tab-input">Input</button>
+      <button class="tab-btn" data-tab="tab-lexical">Lexical</button>
+      <button class="tab-btn" data-tab="tab-syntax">Syntax</button>
+      <button class="tab-btn" data-tab="tab-semantic">Semantic</button>
+      <button class="tab-btn" data-tab="tab-intermediate">Intermediate</button>
+      <button class="tab-btn" data-tab="tab-optimization">Optimization</button>
+      <button class="tab-btn" data-tab="tab-assembly">Assembly</button>
+    </nav>
+
+    <main>
+      <!-- Input Section -->
+      <section id="tab-input" class="tab active">
+        <h2>Enter Expression</h2>
+        <label for="exprInput">Expression:</label>
+        <input id="exprInput" type="text" placeholder="e.g. x = a * 3 - b / c + 9 - e * 5.5" />
+        <div class="controls">
+          <button id="startBtn">Compile</button>
+          <select id="examples">
+            <option value="x = a * 3 - b / c + 9 - e * 5.5">Example: float & ints</option>
+            <option value="y = 2 + 3 * z">y = 2 + 3 * z</option>
+            <option value="x = a ** 3">Invalid: double-star</option>
+            <option value="x = a * (3 - b) / c">With parentheses</option>
+          </select>
+        </div>
+        <div class="error-box" id="inputErrors"></div>
+        <p class="info">Input will be processed through all 6 compilation phases.</p>
+      </section>
+
+      <!-- Output Sections for Each Phase -->
+      <section id="tab-lexical" class="tab"></section>
+      <section id="tab-syntax" class="tab"></section>
+      <section id="tab-semantic" class="tab"></section>
+      <section id="tab-intermediate" class="tab"></section>
+      <section id="tab-optimization" class="tab"></section>
+      <section id="tab-assembly" class="tab"></section>
+    </main>
+
+    <footer>
+      <small>Built by Shafin Ahmed for Compiler Design Project</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

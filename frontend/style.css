@@ -1,0 +1,228 @@
+/* korbo lorbo jitbo 🇧🇩 */
+/* ---------------- Reset ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background: linear-gradient(135deg, #004d3a, #006a4e);
+  color: #f5fff9;
+}
+
+/* ---------------- Container ---------------- */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background: rgba(0, 106, 78, 0.88);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.4),
+    0 0 25px rgba(255,216,77,0.25);
+  position: relative;
+}
+
+/* ---------------- Header ---------------- */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  background: linear-gradient(
+    90deg,
+    #ffd84d,
+    #f42a41,
+    #ffd84d
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+header p.sub {
+  font-size: 16px;
+  color: #fff2b3;
+  text-shadow: 0 0 6px rgba(255,216,77,0.7);
+}
+
+/* ---------------- Tabs ---------------- */
+nav.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(135deg, #006a4e, #008c66);
+  color: #ffd84d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: linear-gradient(135deg, #008c66, #00b383);
+  color: #ffffff;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #ffd84d, #f42a41);
+  color: #004d3a;
+  box-shadow:
+    0 -3px 18px rgba(255,216,77,0.8),
+    0 0 25px rgba(244,42,65,0.6);
+}
+
+/* ---------------- Tabs content ---------------- */
+main .tab {
+  display: none;
+}
+
+main .tab.active {
+  display: block;
+}
+
+/* ---------------- Input ---------------- */
+#tab-input input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ffd84d;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #004d3a;
+}
+
+#tab-input input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 12px #ffd84d;
+  border-color: #ffd84d;
+}
+
+/* ---------------- Controls ---------------- */
+.controls button,
+.controls select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ffd84d;
+  background: linear-gradient(135deg, #006a4e, #008c66);
+  color: #ffd84d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.controls button:hover,
+.controls select:hover {
+  background: linear-gradient(135deg, #ffd84d, #f42a41);
+  color: #004d3a;
+  box-shadow:
+    0 0 15px rgba(255,216,77,0.8),
+    0 0 25px rgba(244,42,65,0.6);
+}
+
+/* ---------------- Phase Cards ---------------- */
+.phase-card {
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 25px rgba(0,0,0,0.45);
+  border-left: 6px solid #ffd84d;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.phase-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #f42a41;
+}
+
+.phase-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 30px rgba(255,216,77,0.7),
+    0 0 35px rgba(244,42,65,0.5);
+}
+
+/* ---------------- Phase color variants ---------------- */
+.phase-lexical {
+  background: linear-gradient(135deg, #004d3a, #006a4e);
+}
+
+.phase-syntax {
+  background: linear-gradient(135deg, #006a4e, #008c66);
+}
+
+.phase-semantic {
+  background: linear-gradient(135deg, #008c66, #00b383);
+}
+
+.phase-intermediate {
+  background: linear-gradient(135deg, #009973, #00cc99);
+}
+
+.phase-optimization {
+  background: linear-gradient(135deg, #00b383, #00e6aa);
+}
+
+.phase-assembly {
+  background: linear-gradient(135deg, #00cc99, #33ffcc);
+}
+
+/* ---------------- Phase Header ---------------- */
+.phase-header {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #ffd84d;
+  text-shadow:
+    0 0 6px rgba(255,216,77,0.8),
+    0 0 12px rgba(244,42,65,0.5);
+}
+
+/* ---------------- Phase Content ---------------- */
+.phase-content {
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  color: #f5fff9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: rgba(255,255,255,0.08);
+}
+
+/* ---------------- Theory Section ---------------- */
+.phase-content.theory {
+  background: linear-gradient(135deg, #ffd84d, #fff2b3);
+  color: #004d3a;
+  border-left: 5px solid #f42a41;
+  font-weight: 600;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff2b3;
+}
