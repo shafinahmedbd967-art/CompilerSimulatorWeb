@@ -7,7 +7,7 @@
 
 ## 📌 Overview
 
-**CompilerSimulatorWeb** transforms abstract compiler theory into a hands-on, visual learning experience. Users input an arithmetic expression in the browser and watch it get processed through six compiler phases in real time — complete with token tables, parse trees, symbol tables, TAC, optimized code, and assembly output.
+**CompilerSimulatorWeb** named **CompileX** transforms abstract compiler theory into a hands-on, visual learning experience. Users input an arithmetic expression in the browser and watch it get processed through six compiler phases in real time — complete with token tables, parse trees, symbol tables, TAC, optimized code, and assembly output.
 
 ---
 
